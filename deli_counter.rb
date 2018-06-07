@@ -8,8 +8,8 @@ def line(katz_deli)
    current_line = "The line is currently:"
      katz_deli.each_with_index(1) do |names,i|
        current_line << "#{i}.#{names}"
-     puts
   end
+  puts current_line
 end
 
 def take_a_number(katz_deli, name)
