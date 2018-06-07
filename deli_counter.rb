@@ -6,7 +6,7 @@ def line(katz_deli)
   else katz_deli.length > 0
    current_line = "The line is currently: "
      katz_deli.each_with_index do |names, i|
-       current_line << "#{i + 1}. #{names}"
+       current_line << " #{i + 1}. #{names}"
   end
   puts current_line
 end
