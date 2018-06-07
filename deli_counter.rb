@@ -5,8 +5,10 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else katz_deli.length > 0
-    hash = Hash.new
-     katz_deli.each_with_index { |names,i| hash[item] = index}
+   current_line = "The line is currently:"
+     katz_deli.each_with_index(1) do |names,i|
+       current_line << "#{i}.#{names}"
+     puts
   end
 end
 
